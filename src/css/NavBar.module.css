@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap');
+.NavContainer{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+    font-weight: 600;
+    position: sticky;
+    background:
+    linear-gradient(
+            135deg,
+            #ffffffdd 0%,
+            #ecc468d9 50%,
+            #000000 100%    
+    );
+    top: 0px;
+    z-index: 200;
+    color:#ffffff;
+    font-family: "Cinzel Decorative", serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.NavContainer::after{
+     content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.02),
+        rgba(0, 0, 0, 0.02) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    pointer-events: none;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+.NavList{
+    display: flex;
+}
+.NavList div{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.NavList div:hover{
+    color:#ffd700;
+}
+.socialDropdown {
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+}
+.socialDropdown:hover{
+    color: #ffd700;
+}
+.summary::-webkit-details-marker {
+  display: none;
+}
+.summary::after {
+  font-size: 11px;
+}
+.socialMenu {
+  position: absolute;
+  top: 100%;
+  background: rgba(0, 0, 0, 0.167);
+  margin-top: 15px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-radius: 4px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+.sidenavbar{
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #0000007c;
+  position: fixed;
+  font-weight: 700;
+  height: 100%;
+  width: 300px;
+  color:#ffffff;
+  transform: translateX(-100%);
+  opacity: 0;
+
+   transition: transform 0.4s ease-in-out,
+              opacity 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.sidenavbar.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.sidenavbar div{
+  margin: 20px 0px 0px 20px;
+  color:#ffffff;
+    font-family: "Cinzel Decorative", serif;
+}
+.sidenavbar div:hover{
+  color:#ffd700;
+  cursor: pointer;
+}
+.siteSocialIcons{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.NavButton{
+  display: none;
+  margin-right: 20px;
+}
+.menu {
+  --color: #fffbb99c;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu svg {
+  width: 64px;
+  height: 48px;
+  position: absolute;
+  top: -6px;
+  left: -14px;
+  stroke: var(--color);
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.menu svg path {
+  transition:
+    stroke-dasharray 0.85s ease,
+    stroke-dashoffset 0.85s ease;
+  stroke-dasharray: 26px 100px;
+  stroke-dashoffset: 126px;
+}
+
+/* middle line */
+.menu svg path:nth-child(2) {
+  stroke-dashoffset: 100px;
+  stroke-dasharray: 26px 74px;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
+}
+
+.menu svg path:nth-child(3) {
+  stroke-dashoffset: 133px;
+  stroke-dasharray: 26px 107px;
+}
+
+.active svg path {
+  stroke-dashoffset: 57px;
+}
+
+.active svg path:nth-child(1),
+.active svg path:nth-child(3) {
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.2, 0.4, 0.2, 1.1);
+}
+
+.active svg path:nth-child(2) {
+  stroke-dashoffset: 2px;
+  stroke-dasharray: 1px 74px;
+  transition-duration: 0.4s;
+}
+
+.active svg path:nth-child(3) {
+  stroke-dashoffset: 58px;
+}
+@media screen and (max-width:760px) {
+ .sidenavbar{
+  display: flex;
+ }
+ .NavList{
+  display: none;
+ }
+ .NavButton{
+  display: flex;
+}
+}

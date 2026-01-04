@@ -1,0 +1,11 @@
+.bannerContainer img{
+    width: 100%;
+}
+.bannerContainer .RORTitle{
+    position: absolute;
+    top: 150px;
+}
+.bannerContainer{
+    display: flex;
+    justify-content: center;
+}
