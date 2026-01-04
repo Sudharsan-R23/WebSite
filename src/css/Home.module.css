@@ -1,11 +1,27 @@
 .bannerContainer img{
     width: 100%;
 }
-.bannerContainer .RORTitle{
+.bannerContainer .RORTitle,.HomePlay  {
     position: absolute;
     top: 150px;
 }
 .bannerContainer{
     display: flex;
     justify-content: center;
+}
+
+.HomeButton{
+    position: absolute;
+    top: 440px;
+    display: flex;
+    gap: 30px;
+}
+.HomePlay img{
+    width: 30px;
+}
+.HomePlay {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    top: 500px;
 }
