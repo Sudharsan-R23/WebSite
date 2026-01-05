@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from './NavBar'
 import Banner from './assets/B1.png'
 import ROR from './assets/rort1.png'
@@ -27,18 +26,19 @@ export default function Home() {
           <button className={`${styles.gameBtn} ${styles.silver}`}>Play PC</button>
         </div>
         <div className={styles.HomePlay}>
-          <img onClick={() =>  palyNav('https://www.youtube.com/results?search_query=how+to+use+wibsite+link+in+react+navigation') } src={Steam} alt="" />
+          <img onClick={() =>{ palyNav('https://www.youtube.com/results?search_query=how+to+use+wibsite+link+in+react+navigation')} } 
+          src={Steam} alt="" />
           <img src={epic}
             alt="Play"
-            onClick={() => playNav("https://store.steampowered.com/")} />
+            onClick={() =>{ playNav("https://store.steampowered.com/")}} />
+          
           <img src={PS}
             alt="Play"
-            onClick={() => playNav("https://www.epicgames.com/site/en-US/home?sessionInvalidated=true")} />
+            onClick={() =>{ playNav("https://www.epicgames.com/site/en-US/home?sessionInvalidated=true")}} />
           
           <img src={XBox}
             alt="Play"
-            onClick={() => playNav("https://www.epicgames.com/site/en-US/home?sessionInvalidated=true")} />
-          
+            onClick={() =>{ playNav("https://www.epicgames.com/site/en-US/home?sessionInvalidated=true")}} />
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@
 .bannerContainer{
     display: flex;
     justify-content: center;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .HomeButton{
@@ -26,9 +27,9 @@
     top: 550px;
 }
 .HomePlay img:hover{
+    filter: drop-shadow(0 0 6px #fff375d1)
+          drop-shadow(0 0 12px #ffffff);
     cursor: pointer;
-    filter: drop-shadow(0 0 10px rgba(255, 223, 61, 0.727));
-    transform: scale(1.2) rotate(-2deg);
 }
 
 .gameBtn {
