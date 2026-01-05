@@ -6,6 +6,11 @@ import styles from './css/Home.module.css'
 import play from './assets/game.png'
 
 export default function Home() {
+
+  const playNav = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div >
       <NavBar />
@@ -15,14 +20,18 @@ export default function Home() {
           <img src={ROR} alt="" />
         </div>
         <div className={styles.HomeButton}>
-          <button>Play Mobile</button>
-          <button>Play PC</button>
+          <button className={`${styles.gameBtn} ${styles.silver}`} >Play Mobile</button>
+          <button className={`${styles.gameBtn} ${styles.silver}`}>Play PC</button>
         </div>
         <div className={styles.HomePlay}>
-          <img src={play} alt="" />
-          <img src={play} alt="" />
-          <img src={play} alt="" />
-          <img src={play} alt="" />
+          <img onClick={() =>  palyNav('https://www.youtube.com/results?search_query=how+to+use+wibsite+link+in+react+navigation') } src={play} alt="" />
+          <img src={play}
+            alt="Play"
+            onClick={() => playNav("https://store.steampowered.com/")} />
+          <img src={play}
+            alt="Play"
+            onClick={() => playNav("https://www.epicgames.com/site/en-US/home?sessionInvalidated=true")} />
+          
         </div>
       </div>
     </div>
