@@ -18,8 +18,8 @@
     );
     top: 0px;
      background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+   background-position: center;
+    background-repeat: no-repeat;
     color:#ffffff;
     font-family: "Cinzel Decorative", serif;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -88,7 +88,7 @@
   flex-direction: column;
   gap: 20px;
   z-index: 250;
-  background-color: #0000007c;
+  background-color: #000000c7;
   position: fixed;
   font-weight: 700;
   height: 100%;

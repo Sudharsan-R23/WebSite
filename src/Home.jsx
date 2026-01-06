@@ -19,10 +19,10 @@ export default function () {
       <section className={styles.HeadLayer}>
         <img src={HeadBanner} className={styles.Banner} alt="" />
         <div className={styles.HeadLayer2}>
-          <h1>Revenge of Realms</h1>
-          <div>
-            <button>Play Pc</button>
-            <button>Play Pc</button>
+          <h1 className={styles.realmTitle}>Revenge of Realms</h1>
+          <div className={styles.BtnGroup}>
+            <button className={`${styles.gameBtn} ${styles.silver}`}>Play Pc</button>
+            <button className={`${styles.gameBtn} ${styles.silver}`}>Play Pc</button>
           </div>
           <div className={styles.HomePlay}>
             <img className={styles.playicon} onClick={() =>{ playNav('https://www.youtube.com/results?search_query=how+to+use+wibsite+link+in+react+navigation')} }
