@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from './assets/game.png'
 import { Link } from 'react-router-dom'
 import YT from './assets/YT.png'
