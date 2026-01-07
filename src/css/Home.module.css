@@ -10,7 +10,6 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-
 .Banner{
    position: absolute;
   inset: 0;
@@ -30,6 +29,9 @@
   align-items: center;
   z-index: 200;
 }
+.realmTitle:hover{
+    cursor: pointer;
+}
 .realmTitle {
   font-family: "Cinzel", serif;
   font-size: clamp(3rem, 6.5vw, 5.5rem);
@@ -37,7 +39,6 @@
   text-transform: uppercase;
   letter-spacing: 6px;
   text-align: center;
-
 
   background: linear-gradient(
     180deg,
@@ -49,7 +50,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-
   text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.606),
     0 0 14px rgba(0,0,0,0.6);
@@ -59,7 +59,6 @@
 
   animation: realmLoop 6s ease-in-out infinite;
 }
-
 
 .realmTitle::after {
   content: "";
@@ -75,8 +74,6 @@
 
   animation: auraLoop 6s ease-in-out infinite;
 }
-
-
 
 @keyframes realmLoop {
   0% {
@@ -116,7 +113,6 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-
   border: none;
   cursor: pointer;
   outline: none;
@@ -181,7 +177,6 @@
     0 10px 28px rgba(0,0,0,0.65);
 }
 
-
 .gameBtn:active {
   transform: scale(0.96);
 }
@@ -199,6 +194,7 @@
     object-fit: contain;
   }
 }
+
 @media (max-width: 500px) {
   .realmTitle{
     font-size: 35px;
