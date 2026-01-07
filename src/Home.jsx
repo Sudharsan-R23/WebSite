@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './css/Home.module.css'
 import HeadBanner from './assets/B1.png'
-import steam from './assets/steam.png'
+import Steam from './assets/Steam.png'
 import epic from './assets/epic.png'
 import ps from './assets/PS.png'
 import xbox from './assets/Xbox.png'
@@ -27,7 +27,7 @@ export default function () {
           </div>
           <div className={styles.HomePlay}>
             <img className={styles.playicon} onClick={() => { playNav('https://www.youtube.com/results?search_query=how+to+use+wibsite+link+in+react+navigation') }}
-              src={steam} alt="" />
+              src={Steam} alt="" />
 
             <img className={styles.playicon} onClick={() => { playNav('https://www.youtube.com/results?search_query=how+to+use+wibsite+link+in+react+navigation') }}
               src={epic} alt="" />
