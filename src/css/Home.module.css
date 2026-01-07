@@ -198,5 +198,10 @@
   .hero img {
     object-fit: contain;
   }
+}
+@media (max-width: 500px) {
+  .realmTitle{
+    font-size: 35px;
+  }
  
 }
